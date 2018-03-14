@@ -4,9 +4,9 @@ require 'sinatra/base'
 class MyApp < Sinatra::Base
   get "/" do
   	unless params[:name]
-  		"<H1>Hola desconocido!</H1>"
+  		"<h1>Hola desconocido!</h1>"
   	else 
-  		"<H1>Hola #{params[:name]}!</H1>"
+  		"<h1>Hola #{params[:name]}!</h1>"
   	end
   end
 
