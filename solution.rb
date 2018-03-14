@@ -1,7 +1,5 @@
 require "sinatra"
-require 'sinatra/base'
 
-class MyApp < Sinatra::Base
   get "/" do
   	unless params[:name]
   		"<h1>Hola desconocido!</h1>"
@@ -10,10 +8,7 @@ class MyApp < Sinatra::Base
   	end
   end
 
-  get '/:name' do
-"Hola #{params[:name]}"
-end
-end
+
 
 
 
